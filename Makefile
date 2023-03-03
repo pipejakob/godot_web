@@ -11,8 +11,10 @@ fmt:
 install:
 	go install ./cmd/...
 
+release: build test
+
 clean:
 	go clean
 	$(RM) godot_web
 
-.PHONY: build test fmt install clean
+.PHONY: build test fmt install release clean
