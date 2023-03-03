@@ -1,0 +1,6 @@
+# vim swap files
+*.swp
+
+# Ignore the binary we build, but not directories of the same name
+godot_web
+!godot_web/
