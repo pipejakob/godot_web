@@ -38,8 +38,20 @@ Then, open the link in your browser to access your build. `godot_web` will
 serve your project files and add the appropriate Cross-Origin HTTP headers so
 that `SharedArrayBuffer`s can be enabled securely.
 
-This server will only accept requests from localhost, so it will not be
-accessible from remote computers.
+By default, this server will only accept requests from localhost, so it will
+not be accessible from remote computers. To change this behavior, you can allow
+external traffic via the `--external` flag:
+
+```shell
+$ godot_web --external
+Server link: https://192.168.0.100:8000/
+```
+
+**Note:** when the `--external` flag is given, `godot_web` will generate a
+self-signed TLS certificate to serve traffic over HTTPS, which is another
+requirement of Godot 4.0 HTML builds that aren't accessed via localhost. If you
+want to use your own certificate and private key instead, use the `--tls-cert
+<FILE>` and `--tls-key <FILE>` flags.
 
 Don't like the default port (`8000`)? Override it with `--port <PORT>`, like:
 
