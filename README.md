@@ -44,7 +44,6 @@ external traffic via the `--external` flag:
 
 ```shell
 $ godot_web --external
-Server link: https://192.168.0.100:8000/
 ```
 
 **Note:** when the `--external` flag is given, `godot_web` will generate a
@@ -57,7 +56,13 @@ Don't like the default port (`8000`)? Override it with `--port <PORT>`, like:
 
 ```shell
 $ godot_web --port 1234
-Server link: http://192.168.0.100:1234/
+```
+
+Want to serve content from a different directory? Specify it as the last
+argument:
+
+```shell
+$ godot_web --port 1234 ~/projects/godot/mygame
 ```
 
 For a list of all supported options, run:
