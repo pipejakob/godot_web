@@ -74,7 +74,8 @@ $ godot_web --help
 ## Requirements
 
 [Releases](https://github.com/pipejakob/godot_web/releases) are stand-alone,
-static binaries with no external dependencies.
+static binaries with no external dependencies. You can download and run them on
+Linux, Mac, and Windows without any other requirements.
 
 ## Building
 
@@ -94,8 +95,8 @@ Or, you can download the source code of a specific
 `make` there:
 
 ```shell
-$ tar xv godot_web-0.1.tar.gz
-$ cd godot_web-0.1
+$ tar xf godot_web-0.2.0.tar.gz
+$ cd godot_web-0.2.0
 $ make
 ```
 
