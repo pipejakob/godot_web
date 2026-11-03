@@ -5,7 +5,7 @@ import (
 	"runtime/debug"
 )
 
-const VERSION = "0.2.1"
+const VERSION = "0.2.2"
 
 func version() string {
 	if info, ok := debug.ReadBuildInfo(); ok {

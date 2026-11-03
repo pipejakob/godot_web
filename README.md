@@ -95,8 +95,8 @@ Or, you can download the source code of a specific
 `make` there:
 
 ```shell
-$ tar xf godot_web-0.2.1.tar.gz
-$ cd godot_web-0.2.1
+$ tar xf godot_web-0.2.2.tar.gz
+$ cd godot_web-0.2.2
 $ make
 ```
 
